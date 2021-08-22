@@ -1,7 +1,7 @@
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Hello, world!");
     read_and_print_env_var("CIRCLE_BUILD_NUM")?;
-    read_and_print_env_var("CIRCLE_PR_USERNAME")?;
+    read_and_print_env_var("CIRCLE_USERNAME")?;
     read_and_print_env_var("CUSTOM_PROJECT_VAR")?;
     Ok(())
 }
