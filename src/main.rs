@@ -9,6 +9,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 fn read_and_print_env_var(env_var_name: &str) -> Result<(), Box<dyn std::error::Error>> {
     let env_var_value =
         std::env::var(env_var_name).map_err(|_| format!("{} env var is not set", env_var_name))?;
-    println!("Value of {} env var is: {}", env_var_name, env_var_value);
+    println!("Value of env var {} is: {}", env_var_name, env_var_value);
     Ok(())
 }
